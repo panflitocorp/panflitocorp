@@ -1,0 +1,218 @@
+/*index*/
+
+h1{
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+  padding-top: 16px;
+}
+
+h3{
+  font-size: 15px;
+  font-family: 'EB Garamond', serif;
+}
+
+.encabezado{
+  display: grid;
+  grid-template-columns: 59px auto;
+}
+
+.sello{
+  width: 96px;
+}
+
+.index{
+  font-family: "Times New Roman", Times, serif;
+}
+
+li{
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  background-color: yellow;
+}
+
+ul{
+  padding-left: 40px;
+  width: 300px;
+}
+
+.padding{
+  padding: 15px;
+  width: 314px;
+}
+
+.textoderecha{
+  text-align: right;
+}
+
+.sangria{
+  display:inline-block;
+  text-indent: 51px;
+}
+
+.cursiva{
+  font-style: italic;
+}
+
+button {
+  font-family: "Times New Roman", Times, serif;
+  background-color: white;
+  border: solid white;
+  border-radius: 2px;
+  font-size: inherit;
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+  display: inline;
+  cursor: pointer;
+}
+
+.modonocturno{
+  margin-left: 40px;
+}
+
+button:hover {
+  border: solid black;
+  border-radius: 0px;
+}
+
+textarea {
+  font-family: "Times New Roman", Times, serif;
+  background-color: white;
+  border-radius: 0px;
+  padding: 3px;
+  cursor: pointer;
+}
+
+form{
+  display: grid;
+  grid-template-columns: 250px auto;
+}
+
+.highlighted {
+  background-color: yellow; /* o el estilo que desees */
+}
+
+body {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+  transition: filter 1s, background-color 1s;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+img {
+  filter: unset;
+}
+
+body.dark-mode {
+  filter: invert(1) hue-rotate(180deg);
+  background-color: black;
+}
+
+body.dark-mode img {
+  filter: invert(1) hue-rotate(180deg) !important;
+}
+body.dark-mode .mesita {
+  filter: none !important;
+}
+
+body.dark-mode .sello {
+  filter: none !important;
+}
+
+body.dark-mode video {
+  filter: invert(1) hue-rotate(180deg) !important;
+}
+
+body.dark-mode video {
+  filter: none !important;
+}
+
+@keyframes rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+/*cuando*/
+
+.tapa{
+  width: 343px;
+}
+
+
+h2{
+  font-size: 22px;
+  font-family: 'EB Garamond', serif;
+  text-align: center;
+}
+
+.textocentrado{
+  text-align: center;
+}
+
+.sellooi{
+  width: 92px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.selloflor{
+  width: 51px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.doblesangria{
+  display: inline-block;
+  text-indent: 102px;
+}
+
+
+/*encargo*/
+
+.okylogo{
+  width: 92px;
+}
+
+
+/*volver*/
+
+.mesita{
+  width: 250px;
+}
+
+.fueguito{
+  width: 51px;
+}
+
+.setlist{
+  width: 314px;
+}
+
+.ojo{
+  width: 314px;
+}
+
+.chechi{
+  width: 314px;
+}
+
+video{
+  width: 300px;
+  object-fit: cover;
+}
+
+
