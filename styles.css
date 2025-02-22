@@ -114,14 +114,15 @@ img {
   filter: unset;
 }
 
+video {
+  filter: unset;
+}
+
 body.dark-mode {
   filter: invert(1) hue-rotate(180deg);
   background-color: black;
 }
 
-body.dark-mode img {
-  filter: invert(1) hue-rotate(180deg) !important;
-}
 body.dark-mode .mesita {
   filter: none !important;
 }
@@ -130,18 +131,25 @@ body.dark-mode .sello {
   filter: none !important;
 }
 
-body.dark-mode video {
-  filter: invert(1) hue-rotate(180deg) !important;
-}
-
-body.dark-mode video {
-  filter: none !important;
-}
-
 @keyframes rotate {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+
+.menu {
+  display: grid;
+  gap: 20px;
+}
+
+/* Diseño en pantallas grandes */
+@media (min-width: 768px) {  
+  .menu {
+      grid-template-columns: 314px 341px; /* Dos columnas: una para columnitas, otra para la imagen */
+      align-items: center; /* Alinea verticalmente */
+  }
+}
+
+
 
 
 /*cuando*/

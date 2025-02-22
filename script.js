@@ -1,3 +1,5 @@
+console.log("Script cargado correctamente");
+
 const textos = [
   "bandalos chinos.html",
   "luis.html",
@@ -62,7 +64,6 @@ function sendToTelegram(comment) {
 }
 
 function toggleDarkMode() {
-  console.log("modo nocturno iniciado");
+  console.log('modo nocturno activado');
   document.body.classList.toggle("dark-mode");
 }
-
